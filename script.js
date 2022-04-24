@@ -25,14 +25,12 @@ function alarm() {
 
 function setAlarm() {
     let d = new Date().toLocaleDateString('en-US');
-    console.log(`valor do d: ${d}`);
+   
     let then = new Date(`${d} ${hour.value}:${minute.value}`).getTime();
-    console.log(`${hour.value}:${minute.value}`);
-    console.log(`valor do then: ${then}`);
+ 
     let now = new Date().getTime();
-    console.log(`valor do now: ${now}`);
+ 
     let distance = then - now;
-    console.log(`valor do distance: ${distance}`);
 
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     
