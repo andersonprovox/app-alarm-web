@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Alarm App</title>
+    </head>
+    <body>
+        <nav>
+            <h1>ALARM APP</h1>
+        </nav>
+        <div class="container">
+            <p>Enter the time</p>
+            <div class="inputs">
+                <input type="number" inputmode="numeric" id="hour" class="time" autocomplete="off">
+                <span>:</span>
+                <input type="number" inputmode="numeric" id="minute" placeholder="" class="time" autocomplete="off">
+            </div>
+            <div class="btns">
+                <button id="set" class="button">SET</button>
+                <button id="stop" class="button">STOP</button>
+            </div>
+            <div class="info">
+                <p id="para"></p>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
